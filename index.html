@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="my">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Dev Typing Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="homeScreen">
+            <h1>Web Dev Typing Game</h1>
+            <p class="intro-line">Welcome to the Web Developer Typing Game!</p>
+            <p class="intro-line">
+                Improve your typing speed while learning essential web
+                development knowledge.
+            </p>
+            <p class="intro-line">
+                Select your preferred time and challenge yourself.
+            </p>
+            <p class="intro-line">
+                Are you ready? Try the game now and see how fast and accurate
+                you can type!
+            </p>
+
+            <div class="home-controls">
+                <label>Timer:</label>
+                <div class="custom-select" id="timeSelectCustom">
+                    <div class="selected">Select Duration</div>
+                    <div class="options">
+                        <div data-value="30">30 Seconds</div>
+                        <div data-value="60">1 Minute</div>
+                        <div data-value="120">2 Minutes</div>
+                        <div data-value="180">3 Minutes</div>
+                    </div>
+                </div>
+
+                <button id="startBtn">Start Game</button>
+            </div>
+        </div>
+
+        <div id="gameScreen" style="display: none">
+            <div class="game-top">
+                <label>Timer:</label>
+                <div class="custom-select" id="timeSelectGameCustom">
+                    <div class="selected">Select Duration</div>
+                    <div class="options">
+                        <div data-value="30">30 Seconds</div>
+                        <div data-value="60">1 Minute</div>
+                        <div data-value="120">2 Minutes</div>
+                        <div data-value="180">3 Minutes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wordContainer">
+                Welcome! 🚀<br /><br />
+                Press any key to start typing after selecting the time.
+            </div>
+
+            <div id="scoreContainer"></div>
+
+            <div id="info">
+                <div id="time">Time: 0s</div>
+                <div class="game-buttons">
+                    <button id="restartBtn" tabindex="-1">Restart</button>
+                    <button id="backBtn" tabindex="-1">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

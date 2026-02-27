@@ -1,0 +1,112 @@
+body {
+    background: #121212;
+    color: #f5f5f5;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+h1 { 
+    margin-bottom: 20px; 
+    font-size: 42px;
+    text-align: center;
+}
+
+.intro-line {
+    font-size: 20px;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.home-controls, .game-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Custom rounded dropdown */
+.custom-select {
+    position: relative;
+    width: 200px;
+    background: #1e1e1e;
+    color: #f5f5f5;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+}
+
+.custom-select .selected {
+    font-size: 16px;
+}
+
+.custom-select .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    border-radius: 0 0 14px 14px; /* Rounded bottom */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.custom-select .options div {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.custom-select .options div:hover {
+    background: #333;
+}
+
+#wordContainer {
+    background: #1e1e1e;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    font-size: 20px;
+    margin-bottom: 20px;
+    min-width: 700px;
+    max-width: 900px;
+    text-align: left;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    min-height: 250px;
+}
+
+#info {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+}
+
+button {
+    font-size: 16px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #121212;
+    cursor: pointer;
+}
+button:hover { background-color: #e0e0e0; }
+
+.game-buttons button {
+    margin-left: 10px;
+}
+
+.wrong { color: #ff4d4d; }
+.correct { color: #f5f5f5; }
+.char { color: #888; } /* dim text before typing */
