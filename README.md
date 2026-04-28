@@ -4,6 +4,12 @@ A fun and interactive typing game designed to help users improve their typing sp
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://webdev-typing-practice.netlify.app/
+
+---
+
 ## 📝 Features
 
 - **Typing Practice with Web Dev Knowledge:** Practice typing using curated paragraphs about HTML, CSS, JavaScript, and modern web development best practices.
